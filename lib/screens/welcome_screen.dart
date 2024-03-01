@@ -23,8 +23,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           end: Alignment.bottomCenter,
           colors: [
             // Color.fromARGB(255, 109, 124, 147),
-            Color.fromARGB(255,110, 121, 170),
-            Color.fromARGB(255,207, 173, 204)
+            Color.fromARGB(255, 35, 173, 118),
+            Color.fromARGB(255, 104, 78, 130)
           ],
         )),
         child: Column(
@@ -35,7 +35,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             const Text(
               "Vyakhya AI",
               style: TextStyle(
-                  color: Color.fromARGB(255, 10, 9, 12),
+                  color: Color.fromARGB(255, 205, 199, 216),
                   fontSize: 36,
                   fontWeight: FontWeight.bold),
             ).animate().fade(
@@ -45,25 +45,31 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               textAlign: TextAlign.center,
               '"Breaking Barriers, Building Bridges:\n Your Words, Our AI. \n Seamless Translation, Limitless Communication!"',
               style: TextStyle(
-                  color: Color.fromARGB(255, 11, 21, 30),
+                  color: Color.fromARGB(255, 165, 171, 177),
                   fontSize: 16,
                   letterSpacing: .5,
                   fontWeight: FontWeight.w400),
             ),
             const Spacer(),
-            TextButton(
-              style: TextButton.styleFrom(
-                foregroundColor: Colors.white,
-                backgroundColor: const Color.fromARGB(255, 182, 129, 157),
-                disabledForegroundColor: Colors.grey.withOpacity(0.38),
+           SizedBox (
+              height: 30,
+  width: 150,
+              child: TextButton(
+                
+                style: TextButton.styleFrom(
+                //  maximumSize: Size(60, 10),
+                  foregroundColor: Colors.white,
+                  backgroundColor: const Color.fromARGB(255, 58, 45, 157),
+                  disabledForegroundColor: Colors.grey.withOpacity(0.38),
+                ),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const HomeScreen()));
+                },
+               child: const Text('HOME'),
               ),
-              onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const HomeScreen()));
-              },
-              child: const Text('HOME'),
             ),
             const Spacer(
               flex: 2,
