@@ -24,7 +24,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           colors: [
             // Color.fromARGB(255, 109, 124, 147),
             Color.fromARGB(255, 35, 173, 118),
-            Color.fromARGB(255, 104, 78, 130)
+            Color.fromARGB(255, 78, 127, 130)
           ],
         )),
         child: Column(
@@ -45,21 +45,21 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               textAlign: TextAlign.center,
               '"Breaking Barriers, Building Bridges:\n Your Words, Our AI. \n Seamless Translation, Limitless Communication!"',
               style: TextStyle(
-                  color: Color.fromARGB(255, 165, 171, 177),
+                  color: Color.fromARGB(255, 219, 224, 222),
                   fontSize: 16,
                   letterSpacing: .5,
                   fontWeight: FontWeight.w400),
             ),
             const Spacer(),
            SizedBox (
-              height: 30,
-  width: 150,
+              height: 50,
+  width: 250,
               child: TextButton(
                 
                 style: TextButton.styleFrom(
                 //  maximumSize: Size(60, 10),
                   foregroundColor: Colors.white,
-                  backgroundColor: const Color.fromARGB(255, 58, 45, 157),
+                  backgroundColor: const Color.fromARGB(255, 35, 173, 118),
                   disabledForegroundColor: Colors.grey.withOpacity(0.38),
                 ),
                 onPressed: () {
