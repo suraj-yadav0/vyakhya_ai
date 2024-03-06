@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:get/get.dart';
 import 'package:vyakhya_ai/screens/home_screen.dart';
 
 class WelcomeScreen extends StatefulWidget {
@@ -23,8 +24,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           end: Alignment.bottomCenter,
           colors: [
             // Color.fromARGB(255, 109, 124, 147),
-            Color.fromARGB(255, 35, 173, 118),
-            Color.fromARGB(255, 78, 127, 130)
+           Color.fromARGB(255, 34, 31, 44),
+            Color.fromARGB(255,156, 189, 188)
           ],
         )),
         child: Column(
@@ -59,14 +60,16 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 style: TextButton.styleFrom(
                 //  maximumSize: Size(60, 10),
                   foregroundColor: Colors.white,
-                  backgroundColor: const Color.fromARGB(255, 35, 173, 118),
+                  backgroundColor: const Color.fromARGB(255, 34, 31, 44),
                   disabledForegroundColor: Colors.grey.withOpacity(0.38),
                 ),
                 onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const HomeScreen()));
+                  // Navigator.push(
+                  //     context,
+                  //     MaterialPageRoute(
+                  //         builder: (context) => const HomeScreen()));
+
+                  Get.to( () => const HomeScreen());
                 },
                child: const Text('HOME'),
               ),
