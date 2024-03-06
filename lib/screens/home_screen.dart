@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vyakhya_ai/widgets/custom_list.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -13,15 +14,18 @@ class _HomeScreenState extends State<HomeScreen> {
     return Container(
       decoration: const BoxDecoration(
           gradient: LinearGradient(
-            begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-            colors: [
-        Color.fromARGB(255, 35, 173, 118),
-        Color.fromARGB(255, 81, 134, 137)
-      ])),
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+            Color.fromARGB(255, 35, 173, 118),
+            Color.fromARGB(255, 81, 134, 137)
+          ])),
       child: Scaffold(
         appBar: AppBar(
-          title: const Text("Vyakhya AI", style: TextStyle(color: Colors.white),),
+          title: const Text(
+            "Vyakhya AI",
+            style: TextStyle(color: Colors.white),
+          ),
           centerTitle: true,
           backgroundColor: Colors.transparent,
           // flexibleSpace: Container(
@@ -36,6 +40,8 @@ class _HomeScreenState extends State<HomeScreen> {
           // ),
         ),
         backgroundColor: Colors.transparent,
+
+        body: ListView(),
       ),
     );
   }
